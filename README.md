@@ -1,11 +1,8 @@
 # Cloud
 We dont know yet ;)
 
-# Authors
-- Konrad Ciałkowski
-- Sebastian Ciałkowski
-
 # Branch policy
+
 All new, working functionality should be merged into **develop** branch. Every added feature must 
 be accepted by all team members.
 
@@ -19,3 +16,7 @@ be accepted by all team members.
   8. Delete ***[your_branch]***.
 
 Well done, You contributed to the project! 👌
+
+# Authors
+- Konrad Ciałkowski
+- Sebastian Ciałkowski
