@@ -4,7 +4,7 @@ We dont know yet ;)
 # Branch policy
 
 All new, working functionality should be merged into **develop** branch. Every added feature must 
-be accepted by all team members.
+be accepted by all team members. There's quick guide how to contribute to this repository:
 
   1. Create new branch based od **develop** or other ***[branch]***.
   2. Add proper prefix to ***[your-branch]*** wich will explain your work process on it. eg. improvement, hotfix, task, tryout etc. Final branch should look like this: ```improvement/update-readme.```
