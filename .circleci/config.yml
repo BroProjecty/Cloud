@@ -1,0 +1,34 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.9
+
+    steps:
+      - checkout
+
+      # Instalacja wymaganych zależności
+      - run:
+          name: Install dependencies
+          command: |
+            pip install -r requirements.txt
+
+      # Uruchomienie testów jednostkowych
+      - run:
+          name: Run unit tests
+          command: |
+            pytest
+
+      # Sprawdzenie poprawności składni w plikach
+      - run:
+          name: Check code syntax
+          command: |
+            flake8 .
+            # lub użyj innych narzędzi jak pylint, black, itp. w zależności od preferencji
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
